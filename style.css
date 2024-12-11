@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "cinzel";
+    src: url(Cinzel-Regular.otf);
+}
+@font-face {
+    font-family: sing;
+    src: url(Angelface.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h6{
+    font-family: "cinzel";
+    color: rgb(147, 110, 0);
+    background-image: linear-gradient(
+        to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    -webkit-background-clip: text;    
+}
+p{
+    font-family: "cinzel";
+    color: rgb(147, 110, 0);
+    background-image: linear-gradient(
+        to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    -webkit-background-clip: text;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "sing";
+    letter-spacing: 10px;
+    color:rgb(147, 110, 0);
+    background-image: linear-gradient(
+        to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    -webkit-background-clip: text;
+}
+::placeholder {
+    color: rgb(147, 110, 0);
+}
