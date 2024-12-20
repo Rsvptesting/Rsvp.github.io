@@ -54,7 +54,7 @@
                       </div>    
                 </div>                
             </div>
-            <div class="panel " id="mycode">
+            <div class="panel " id="mycode" style="display: none;">
                 <div class="row mt-2">
                     <div class="col col-sm-6 col-md-6">
                         <h6>no. of Adults</h6>                                
@@ -65,10 +65,10 @@
                 </div>
                 <div class="row">
                     <div class="col col-md-6">
-                        <input type="number" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="CountOfAdults">
+                        <input type="number" min="0" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="CountOfAdults">
                     </div>
                     <div class="col col-md-6">
-                        <input type="number" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="CountOfChildren">
+                        <input type="number" min="0" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="CountOfChildren">
                     </div>
                 </div>
                 <div class="row mt-2 g-2"  >
@@ -82,10 +82,10 @@
                 </div>
                 <div class="row">
                     <div class="col col-md-6">
-                        <input type="number" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="VegetarianCount">
+                        <input type="number" min="0"  class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="VegetarianCount">
                     </div>
                     <div class="col col-md-6">
-                        <input type="number" class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="Non-VegetarianCount">
+                        <input type="number" min="0"  class="form-control rounded-4" style="background-color: #f0dcd8;" style="color:rgb(147, 110, 0);" aria-label="Username" aria-describedby="basic-addon1" name="Non-VegetarianCount">
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 <div class="row mt-4">
                     <div class="col">
                         <h6>mobile number</h6>
-                        <input style="background-color: #f0dcd8;" type="number" class="form-control rounded-4" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="ContactNo.">
+                        <input style="background-color: #f0dcd8;" type="tel" class="form-control rounded-4"  pattern="[0-9]{10}|\+[0-9]{1,3} [0-9]{10}" maxlength="10" minlength="10" aria-label="Username" aria-describedby="basic-addon1" name="ContactNo.">
                     </div>
                 </div>
             </div>
@@ -101,11 +101,24 @@
                 <div class="row mt-5">
                     <div class="col">
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button style="background-color:#f0dcd8; color:rgb(147, 110, 0)" class="btn rounded-5 cc" type="submit" name="submit">Submit</button>
+                            <button style="background-color:#f0dcd8; color:rgb(147, 110, 0)" class="btn rounded-5 cc" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
                           </div>
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content text-center" style="background-color: #dec9c4;">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Do You Want Submit the form</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer text-center align-content-center">
+                      <button style="background-color:#f0dcd8; color:rgb(147, 110, 0)" type="submit" class="btn rounded-5 cc" name="submit">sumbit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
