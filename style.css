@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: sing;
-    src: url(Angelface.otf);
+    src: url(Signatra.otf);
 }
 *{
     margin: 0;
@@ -35,7 +35,6 @@ p{
 h1{
     font-size: 50px;
     font-family: "sing";
-    letter-spacing: 10px;
     color:rgb(147, 110, 0);
     background-image: linear-gradient(
         to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
